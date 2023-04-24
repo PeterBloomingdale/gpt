@@ -16,11 +16,11 @@ class GPT:
         response = openai.ChatCompletion.create( 
             model=model,
             messages=[
-                {"role": "system", "content": "You are the smartest person in the world and can answer everything."},
+                {"role": "system", "content": "You are the worlds best software engineer."},
                 {"role": "user", "content": question},
             ],
             temperature=0.9,
-            max_tokens=300,
+            max_tokens=500,
             top_p=0.9,
             n=1,
         )
@@ -38,7 +38,7 @@ class GPTTXT:
         response = openai.ChatCompletion.create(
             model=model,
             messages=[
-                {"role": "system", "content": "You are the smartest person in the world and can answer everything."},
+                {"role": "system", "content": "You are the worlds best software engineer."},
                 {"role": "user", "content": input_string},
             ],
             temperature=0.9,
